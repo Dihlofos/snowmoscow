@@ -1,0 +1,35 @@
+.about {
+  position: relative;
+  z-index: 10;
+  max-width: 115rem;
+  margin: 0 auto 11.1rem;
+  background-color: $white;
+  border-radius: 20px;
+  color: $black;
+  display: flex;
+  padding: 1.1rem 1.3rem 0;
+
+  &__content {
+    padding: 2.4rem 8.2rem 3rem 2em;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 5.9rem;
+    text-transform: uppercase;
+    color: $blue;
+    margin: 0 0 2.1rem;
+  }
+
+  &__text {
+    p {
+      &:not(:last-child) {
+        margin: 0 0 4rem;
+      }
+
+      font-size: 3rem;
+      line-height: 3.6rem;
+    }
+  }
+}

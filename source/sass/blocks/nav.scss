@@ -1,0 +1,47 @@
+.nav {
+  position: relative;
+  z-index: 13;
+  padding: 5rem 0 0;
+  max-width: 128rem;
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0 -5px;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 5px;
+    color: $blue;
+    background: $white;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    min-width: 12rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    transition: font-weight 0.1s ease-in-out, background-color 0.1s ease-in-out,
+      color 0.1s ease-in-out;
+    border: 1px solid $white;
+
+    &:hover {
+      font-weight: 500;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $pastel;
+    }
+  }
+
+  &__item {
+    &:last-child .nav__link {
+      min-width: 18rem;
+    }
+  }
+}

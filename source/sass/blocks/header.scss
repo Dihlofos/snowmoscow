@@ -1,0 +1,70 @@
+.header {
+  position: relative;
+
+  &__circles {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__trees {
+    top: 3.7rem;
+    right: 0;
+    position: absolute;
+    z-index: 9;
+  }
+
+  &__content {
+    padding: 9.5rem 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bullet {
+    color: $blue;
+    font-weight: 500;
+    background-color: $yellow;
+    padding: 1.3rem 1.6rem;
+    border-radius: 200px;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin: 0 0 4.8rem;
+
+    &--pastel {
+      background-color: $pastel;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__info {
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin-left: 9.5rem;
+    padding: 4.7rem 0 0;
+  }
+
+  &__logo {
+    img {
+      width: 52.3rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16.5rem 0 0;
+    margin: 0 0 11rem;
+  }
+}
