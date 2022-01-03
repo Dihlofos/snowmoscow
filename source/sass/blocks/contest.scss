@@ -12,16 +12,39 @@
   line-height: 3.6rem;
   font-weight: 400;
 
+  @media (max-width: $tablet) {
+    max-width: calc(100% - 48px);
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px;
+  }
+
   &__title {
     font-size: 5rem;
     line-height: 5.9rem;
     text-transform: uppercase;
     margin: 0 0 3.5rem;
     text-align: center;
+
+    @media (max-width: $tablet) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &__text {
     padding: 0 2rem 1.5rem;
+
+    @media (max-width: $tablet) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    @media (max-width: $tablet) {
+      padding: 0 0 0 16px;
+    }
   }
 
   &__footer {
@@ -29,6 +52,12 @@
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 0 0 3.6rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+    }
   }
 
   &__decor {
@@ -37,6 +66,13 @@
     right: 5.4rem;
     width: 28rem;
     height: 30rem;
+
+    @media (max-width: $tablet) {
+      bottom: 14px;
+      right: 14px;
+      width: 90px;
+      height: 95px;
+    }
   }
 
   &__link {
@@ -54,6 +90,14 @@
     transition: font-weight 0.1s ease-in-out, background-color 0.1s ease-in-out,
       color 0.1s ease-in-out;
     z-index: 4;
+
+    @media (max-width: $tablet) {
+      display: block;
+      font-size: 14px;
+      line-height: 17px;
+      min-width: 125px;
+      margin: 0 auto;
+    }
 
     &:hover {
       font-weight: 500;

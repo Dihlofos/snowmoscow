@@ -2,6 +2,10 @@
   position: relative;
   padding: 16rem 0 0;
 
+  @media (max-width: $tablet) {
+    padding: 11rem 0 0;
+  }
+
   &__top-circle {
     position: absolute;
     top: 0;
@@ -12,6 +16,14 @@
     background-color: #fff;
     z-index: 3;
     overflow: hidden;
+
+    @media (max-width: $tablet) {
+      top: 0;
+      left: 50%;
+      height: 954px;
+      width: 954px;
+      transform: translateX(-50%);
+    }
   }
 
   &__trees-bg {
@@ -33,12 +45,21 @@
     background-image: url("../../img/snows.svg");
     background-position: 50% 0;
     background-repeat: no-repeat;
+
+    @media (max-width: $tablet) {
+      height: 88px;
+      background-position: 50% 0;
+      background-size: 69%;
+    }
   }
 
   &__content {
     position: relative;
     z-index: 4;
     margin: 0 0 9.5rem;
+    @media (max-width: $tablet) {
+      margin: 0 0 36px;
+    }
   }
 
   &__title {
@@ -67,6 +88,12 @@
       &:last-child {
         margin: 0;
       }
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0 0 15px;
     }
   }
 

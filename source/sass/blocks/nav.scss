@@ -5,6 +5,10 @@
   max-width: 128rem;
   margin: 0 auto;
 
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     width: 100%;

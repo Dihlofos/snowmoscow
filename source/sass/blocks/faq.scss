@@ -12,11 +12,20 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 6.1rem;
+
+    @media (max-width: $tablet) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &__accordeon {
     max-width: 100rem;
     margin: 0 auto;
+
+    @media (max-width: $tablet) {
+      max-width: calc(100% - 48px);
+    }
   }
 
   &__item {
@@ -46,6 +55,12 @@
         transform: rotate(-90deg);
       }
     }
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      line-height: 19px;
+      text-align: left;
+    }
   }
 
   &__content {
@@ -53,6 +68,11 @@
     color: $black;
     font-size: 3rem;
     line-height: 3.6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+      line-height: 17px;
+    }
 
     &.active {
       display: block;

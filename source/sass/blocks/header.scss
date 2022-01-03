@@ -6,6 +6,33 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__circles-mobile {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media (max-width: $tablet) {
+      display: block;
+      width: 100%;
+    }
+
+    @media (max-width: 696px) {
+      width: 696px;
+      max-width: 696px;
+      top: 43%;
+      left: 50%;
+      width: 696px;
+      max-width: 696px;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__container {
@@ -18,12 +45,37 @@
     right: 0;
     position: absolute;
     z-index: 9;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__trees-mobile {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: none;
+    z-index: 2;
+
+    &--left {
+      left: 0;
+      right: auto;
+      transform: scaleX(-1);
+    }
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
   }
 
   &__content {
-    padding: 9.5rem 0 0;
+    padding: 2rem 0 0;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__bullet {
@@ -44,6 +96,24 @@
     p {
       margin: 0;
     }
+
+    @media (max-width: $tablet) {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.6rem;
+      width: calc(50% - 1.4rem);
+      margin: 0;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+      margin: 0 0 20px;
+    }
   }
 
   &__info {
@@ -51,11 +121,29 @@
     flex-grow: 1;
     margin-left: 9.5rem;
     padding: 4.7rem 0 0;
+
+    @media (max-width: $tablet) {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 0 17px;
+    }
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
     img {
       width: 52.3rem;
+
+      @media (max-width: $tablet) {
+        margin: 0 auto;
+        width: 264px;
+      }
     }
   }
 
@@ -66,5 +154,14 @@
     text-transform: uppercase;
     padding: 16.5rem 0 0;
     margin: 0 0 11rem;
+
+    @media (max-width: $tablet) {
+      padding: 36px 0 0;
+      margin: 0 0 36px;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 90%;
+      margin: 0 auto 36px;
+    }
   }
 }
