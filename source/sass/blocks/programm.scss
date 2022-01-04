@@ -17,12 +17,23 @@
     z-index: 3;
     overflow: hidden;
 
+    &--bottom {
+      bottom: 35rem;
+      z-index: 2;
+      top: auto;
+    }
+
     @media (max-width: $tablet) {
       top: 0;
       left: 50%;
-      height: 954px;
-      width: 954px;
+      height: 1024px;
+      width: 1024px;
       transform: translateX(-50%);
+
+      &--bottom {
+        top: 200px;
+        bottom: auto;
+      }
     }
   }
 
@@ -48,6 +59,10 @@
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
+
+    &--mt {
+      margin-top: 5rem;
+    }
 
     span {
       padding: 0 0 20px;
@@ -109,6 +124,13 @@
       &:last-child {
         margin: 0;
       }
+    }
+
+    span {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      // color: $blue;
     }
 
     @media (max-width: $tablet) {
