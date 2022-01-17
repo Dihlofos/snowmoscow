@@ -408,7 +408,7 @@
 
       const link = document.createElement("a");
       link.href = item.link;
-      link.target = "blank_";
+      link.target = "_blank";
       link.textContent = item.number;
       innerCell.append(link);
       wrapper.append(innerCell);
