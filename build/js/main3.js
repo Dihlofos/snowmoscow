@@ -408,8 +408,12 @@
     setMonth(todayMonth);
     renderTable(data[todayMonth], todayMonth);
 
-    if (todayMonth === 0) prev.classList.add("calendar__arrow--disabled");
-    if (todayMonth === 1) next.classList.add("calendar__arrow--disabled");
+    if (todayMonth === 0) {
+      prev.classList.add("calendar__arrow--disabled");
+    }
+    if (todayMonth === 1) {
+      next.classList.add("calendar__arrow--disabled");
+    }
 
     next.addEventListener("click", () => {
       changeMonth(1);

@@ -50,8 +50,12 @@
   }
 
   &__image {
+    &--depcult {
+      margin-left: -2.8rem;
+      margin-top: 1rem;
+    }
     @media (max-width: $tablet) {
-      max-width: 100px;
+      max-width: 150px;
     }
   }
 
